@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+
+    <string name="already">Already have an account?</string>
+    <string name="full">Full Name</string>
+
+</resources>
