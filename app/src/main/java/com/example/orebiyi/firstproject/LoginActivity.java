@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, stEmail + "\n" + stPassword, Toast.LENGTH_SHORT).show();
 
                 //or you can show success message with toasty library
-                Toasty.success(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                Toasty.success(LoginActivity.this, "Login Success", Toasty.LENGTH_SHORT).show();
 
                 // moving to home page with the help of intent after successful login
                 Intent i = new Intent(LoginActivity.this, HomeActivity.class);
