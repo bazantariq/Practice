@@ -42,9 +42,9 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
 
     //add lottie animation library
-    implementation (libs.lottie)
+    implementation ("com.airbnb.android:lottie:6.6.0")
 
     //add toasty library
-    implementation (libs.toasty)
+    implementation ("com.github.GrenderG:Toasty:1.5.2")
 
 }
