@@ -76,7 +76,7 @@
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button"
-        android:id="@+id/login"
+        android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="32dp"
@@ -98,6 +98,7 @@
             android:text="@string/not_have_an_account"
             android:textSize="13dp" />
         <TextView
+            android:id="@+id/signup_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
