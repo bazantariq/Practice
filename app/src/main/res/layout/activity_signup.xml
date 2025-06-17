@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
         android:hint="@string/email">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -80,6 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
         android:hint="@string/password"
         app:endIconMode="password_toggle">
 

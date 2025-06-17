@@ -74,6 +74,12 @@ public class LoginActivity extends AppCompatActivity {
                     Toasty.error(LoginActivity.this, "Invalid email pattern", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                //password length
+                if (etPassword.length() < 6) {
+                    //password.setError("Password must be at least 6 characters");
+                    Toasty.error(LoginActivity.this, "Password must be at least 6 characters", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 auth.signInWithEmailAndPassword(etEmail, etPassword)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
