@@ -16,41 +16,16 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SignupActivity extends AppCompatActivity {
 
-    EditText name, email, password, cpassword;
-    Button signup;
-    TextView login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_signup);
-
-        //attachment with ids
-        name= findViewById(R.id.fullname);
-        email= findViewById(R.id.email);
-        password= findViewById(R.id.password);
-        cpassword= findViewById(R.id.cpassword);
-        signup= findViewById(R.id.bt_signup);
-        login= findViewById(R.id.tvlogin);
-
-        //Intent - used to navigate between activities
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //define your action when user click
-                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-        //signup button on click listner
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SignupActivity.this, "Sign Up Successful", Toast.LENGTH_SHORT).show();
-            }
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
         });
 
     }
