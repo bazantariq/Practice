@@ -35,9 +35,15 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toasty.success(HomeActivity.this, "Logout Successfully",
                         Toasty.LENGTH_SHORT).show();
+                //signout method
                 auth.signOut();
+
+                //intent to move to the login page
                 Intent i = new Intent(HomeActivity.this, LoginActivity.class);
                 startActivity(i);
+
+                //finish this page so that this can not be show when back button is pressed
+                finish();
             }
         });
 
