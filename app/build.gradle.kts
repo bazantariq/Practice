@@ -52,4 +52,7 @@ dependencies {
     //add toasty library
     implementation ("com.github.GrenderG:Toasty:1.5.2")
 
+    //alert dialog
+    implementation ("com.github.samwelnyandoro:SweetAlertDialog:1.1")
+
 }
